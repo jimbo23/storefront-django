@@ -67,6 +67,7 @@ class Order(models.Model):
 class Address(models.Model):
     street = models.CharField(max_length=255)
     road = models.CharField(max_length=255)
+    zip = models.PositiveSmallIntegerField()
     # One-to-One relationship example: Django will automatically create
     # the field in Customer Model for us.
     # customer = models.OneToOneField(
